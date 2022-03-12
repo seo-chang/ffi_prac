@@ -10,7 +10,7 @@ There are multiple ways(FFI) to get it done, but from this post, I will show you
 gcc 'fileName'.c -o 'fileName'
 
 ar rcs 'fileName'.a 'fileName'.o
-clang -fpic -shared -Wl,-all_load ten.a -o libbar.dylib 
+clang -fpic -shared -Wl,-all_load 'fileName'.a -o libbar.dylib 
 
 source: https://stackoverflow.com/questions/25321911/convert-a-to-dylib-in-mac-osx
 ```
